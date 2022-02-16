@@ -13,7 +13,6 @@ from ubteacher.engine.trainer import UBTeacherTrainer, BaselineTrainer
 from ubteacher.modeling.meta_arch.rcnn import TwoStagePseudoLabGeneralizedRCNN
 from ubteacher.modeling.proposal_generator.rpn import PseudoLabRPN
 from ubteacher.modeling.roi_heads.roi_heads import StandardROIHeadsPseudoLab
-import ubteacher.data.datasets.builtin
 
 from ubteacher.modeling.meta_arch.ts_ensemble import EnsembleTSModel
 
