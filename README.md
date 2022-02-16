@@ -92,6 +92,6 @@ python train_net.py --num-gpus 1 --config configs/coco_supervision/cus_config.ya
 && python inference.py --test_dir datasets/dota/test/images/ --output_dir visualize_test_dota/ --model_dir output_dota/ \
 && python train_net.py --num-gpus 1 --config configs/coco_supervision/cus_config.yaml DATASETS.NAME exdark DATASETS.TRAIN_IMAGE_DIR datasets/exdark_data/exdark/ DATASETS.TRAIN_ANN_PATH datasets/exdark_data/exdark_anno_train.json MODEL.ROI_HEADS.NUM_CLASSES 12 OUTPUT_DIR output_exdark/ DATALOADER.SUP_PERCENT 30.0 SOLVER.MAX_ITER 10000 \
 && python inference.py --test_dir datasets/exdark_data/test/ --output_dir visualize_test_exdark/ --model_dir output_exdark/ \
-&& python train_net.py --num-gpus 1 --config configs/coco_supervision/cus_config.yaml DATASETS.NAME wheat-detection DATASETS.TRAIN_IMAGE_DIR datasets/wheat-detection/train2017 DATASETS.TRAIN_ANN_PATH datasets/wheat-detection/annotations/instances_train2017.json MODEL.ROI_HEADS.NUM_CLASSES 1 OUTPUT_DIR output_wheat/ DATALOADER.SUP_PERCENT 10.0 SOLVER.MAX_ITER 10000 \
+&& python train_net.py --num-gpus 1 --config configs/coco_supervision/cus_config.yaml DATASETS.NAME wheat-detection DATASETS.TRAIN_IMAGE_DIR datasets/wheat-detection/train DATASETS.TRAIN_ANN_PATH datasets/wheat-detection/annotations/ann_train.json MODEL.ROI_HEADS.NUM_CLASSES 1 OUTPUT_DIR output_wheat/ DATALOADER.SUP_PERCENT 10.0 SOLVER.MAX_ITER 10000 \
 && python inference.py --test_dir datasets/wheat-detection/test/ --output_dir visualize_test_wheat/ --model_dir output_wheat/
 ```
